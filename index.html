@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SGPA Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎓 SGPA Calculator</h1>
+
+    <div class="card">
+
+        <!-- Branch -->
+        <select id="branch">
+            <option value="">Select Branch</option>
+            <option value="CSE">CSE</option>
+            <option value="AI&DS">AI&DS</option>
+            <option value="IT">IT</option>
+            <option value="EE">EE</option>
+            <option value="ECE">ECE</option>
+            <option value="ME">ME</option>
+        </select>
+
+        <!-- Semester -->
+        <select id="semester" onchange="loadSubjects()">
+            <option value="">Select Semester</option>
+            <option value="sem1">1st Semester</option>
+            <option value="sem2">2nd Semester</option>
+            <option value="sem3">3rd Semester</option>
+            <option value="sem4">4th Semester</option>
+            <option value="sem5">5th Semester</option>
+            <option value="sem6">6th Semester</option>
+            <option value="sem7">7th Semester</option>
+            <option value="sem8">8th Semester</option>
+        </select>
+
+        <div id="subjects"></div>
+
+        <button onclick="calculateSGPA()">Calculate SGPA</button>
+
+        <h2 id="result">SGPA: --</h2>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
