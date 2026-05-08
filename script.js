@@ -313,7 +313,6 @@ function loadSubjects() {
                     oninput="autoFillGrade(this)">
 
                 <select onchange="clearMarks(this)">
-                    // <option value="">Grade</option>
                     <option>A++</option>
                     <option>A+</option>
                     <option>A</option>
